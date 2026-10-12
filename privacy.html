@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy - Nutshl</title>
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card: #1e293b;
+      --text: #f8fafc;
+      --muted: #94a3b8;
+      --primary: #38bdf8;
+      --accent: #818cf8;
+      --border: #334155;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      margin: 0;
+      padding: 2rem 1rem;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      background: var(--card);
+      padding: 2.5rem;
+      border-radius: 1rem;
+      border: 1px solid var(--border);
+      box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.5);
+    }
+    h1, h2, h3 { color: #fff; }
+    h1 { font-size: 2rem; margin-bottom: 0.5rem; border-bottom: 1px solid var(--border); padding-bottom: 1rem; }
+    h2 { font-size: 1.25rem; margin-top: 2rem; color: var(--primary); }
+    p, li { color: var(--muted); }
+    strong { color: var(--text); }
+    a { color: var(--primary); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .badge { display: inline-block; background: rgba(56, 189, 248, 0.15); color: var(--primary); padding: 0.25rem 0.75rem; border-radius: 9999px; font-size: 0.85rem; margin-bottom: 1rem; }
+    .card { background: rgba(15, 23, 42, 0.6); padding: 1.25rem; border-radius: 0.5rem; border: 1px solid var(--border); margin: 1.5rem 0; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <span class="badge">Legal & Privacy Center</span>
+    <h1>Nutshl Privacy Policy</h1>
+    <p><strong>Effective Date:</strong> October 12, 2026<br>
+    <strong>Application:</strong> Nutshl (Package: <code>app.nutshl.audio</code>)</p>
+
+    <div class="card">
+      <p><strong>Executive Summary:</strong> Nutshl is an on-device utility operating on a <strong>Bring Your Own Key (BYOK)</strong> model. We do not operate remote application servers that store your video links, transcripts, or personal credentials. Your data stays on your device or in your personal Google account.</p>
+    </div>
+
+    <h2>1. Information We Collect and Process</h2>
+    <p>Nutshl collects only the minimum information necessary to execute AI transcription, summarization, and studio audio synthesis:</p>
+    <ul>
+      <li><strong>User-Provided YouTube URLs:</strong> URLs entered or shared into the application are processed solely to retrieve video content for summarization.</li>
+      <li><strong>API Keys (BYOK):</strong> Google Gemini API keys provided by you are stored securely on your local device using AES-256-GCM encryption and the hardware-backed Android KeyStore. Keys are transmitted solely and directly to Google's official endpoints (<code>generativelanguage.googleapis.com</code>) via HTTPS. We never transmit or store your API keys on any third-party or developer server.</li>
+      <li><strong>Local Transcripts & Audio Cache:</strong> Generated scripts, audio digests, and bookmarks are saved exclusively to your local device storage (IndexedDB / app sandbox).</li>
+    </ul>
+
+    <h2>2. Third-Party Services & Integrations</h2>
+    <p>The application interacts with the following external services upon your instruction:</p>
+    <ul>
+      <li><strong>Google Gemini API:</strong> For AI text summarization and text-to-speech audio synthesis. Interactions are governed by <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a> and the Google AI Studio Terms.</li>
+      <li><strong>Google Drive (Optional):</strong> If you choose to enable cloud synchronization, Nutshl accesses only its own dedicated application data folder (<code>drive.file</code> scope) to backup your digests. Nutshl cannot access, view, or modify any other files in your Google Drive.</li>
+    </ul>
+
+    <h2>3. Telemetry and Analytics</h2>
+    <p>Nutshl does <strong>not</strong> use third-party analytics trackers, advertising SDKs, device fingerprinting, or behavioral surveillance tools.</p>
+
+    <h2>4. Data Retention and Security</h2>
+    <p>All application state is stored locally within the application sandbox. Sensitive secrets (API keys) are protected with native Android Keystore encryption.</p>
+
+    <h2>5. User Rights & Data Deletion (Google Play Compliance)</h2>
+    <p>You have complete control over your data at all times:</p>
+    <ul>
+      <li><strong>In-App Deletion:</strong> You can purge all stored transcripts, audio digests, cache files, and API keys instantly by navigating to <em>Settings &gt; Storage Management &gt; Delete Account &amp; Data</em>.</li>
+      <li><strong>Google Drive Data:</strong> You can delete synced backups directly from the Google Drive web interface under <em>Settings &gt; Manage Apps &gt; Nutshl &gt; Delete hidden app data</em>.</li>
+      <li><strong>Web Deletion Request:</strong> If you have uninstalled the application and wish to confirm complete deletion of any cloud sync data, you may email us at <a href="mailto:support@nutshl.app">support@nutshl.app</a> with the subject line <em>"Data Deletion Request"</em>. Since Nutshl maintains no developer database, no user records persist once local data and Drive backups are removed.</li>
+    </ul>
+
+    <h2>6. Children's Privacy</h2>
+    <p>Nutshl is intended for general audiences aged 13 and older. We do not knowingly collect personal information from children under the age of 13.</p>
+
+    <h2>7. Changes to This Policy</h2>
+    <p>We may update this policy periodically. Any changes will be posted to this page with an updated effective date.</p>
+
+    <h2>8. Contact Us</h2>
+    <p>For questions regarding this privacy policy or your data, please contact:<br>
+    <strong>Email:</strong> <a href="mailto:support@nutshl.app">support@nutshl.app</a></p>
+  </div>
+</body>
+</html>
